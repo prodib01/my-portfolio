@@ -1,0 +1,135 @@
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+    --accent-color: #0dcaf0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0b5ed7;
+}
+
+/* Text Gradient Effect */
+.text-gradient {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Section Padding */
+.section-padding {
+    padding: 100px 0;
+}
+
+/* Navigation Styles */
+.navbar-scrolled {
+    background-color: rgba(33, 37, 41, 0.95) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link-hover {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link-hover:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.nav-link-hover:hover:after {
+    width: 100%;
+}
+
+/* Project Card */
+.project-img {
+    transition: transform 0.5s ease;
+}
+
+.card:hover .project-img {
+    transform: scale(1.05);
+}
+
+/* Animated Progress Bar */
+@keyframes progressAnimation {
+    0% { width: 0; }
+}
+
+.progress-animated {
+    animation: progressAnimation 1.5s ease;
+}
+
+/* Contact Form */
+.form-control {
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    border-color: var(--primary-color);
+}
+
+/* Social Media Icons */
+.social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    transform: translateY(-3px);
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    h1.display-3 {
+        font-size: calc(1.5rem + 3vw);
+    }
+
+    .hero {
+        height: 100vh;
+        background-attachment: scroll;
+    }
+}
