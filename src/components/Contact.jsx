@@ -97,9 +97,9 @@ const Contact = () => {
 
                             <div className="contact-info">
                                 {[
-                                    { icon: 'bi-geo-alt', title: 'Location', content: 'Your City, Country' },
-                                    { icon: 'bi-envelope', title: 'Email', content: 'your.email@example.com' },
-                                    { icon: 'bi-github', title: 'GitHub', content: 'github.com/yourusername' }
+                                    { icon: 'bi-geo-alt', title: 'Location', content: 'Kampala, Uganda' },
+                                    { icon: 'bi-envelope', title: 'Email', content: 'kskbrendah@gmail.com' },
+                                    { icon: 'bi-github', title: 'GitHub', content: 'github.com/prodib01' }
                                 ].map((item, index) => (
                                     <motion.div
                                         key={item.title}

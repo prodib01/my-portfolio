@@ -1,35 +1,38 @@
 import React from 'react';
 import { Container, Row, Col, Card, Badge, Button } from 'react-bootstrap';
 import { motion } from 'framer-motion';
+import newzzone from '../assets/images/newzzone.jpg';
+import beicholo from '../assets/images/beicholo.jpg';
+import yoga from '../assets/images/yoga.jpg';
 
 const Projects = () => {
     const projectData = [
         {
             id: 1,
-            title: 'E-Commerce Platform',
+            title: 'Beicholo',
             description: 'A full-stack e-commerce solution with product management, shopping cart, and payment processing capabilities.',
-            image: 'https://images.unsplash.com/photo-1467232004584-018046c4a3e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1169&q=80',
+            image: beicholo,
             technologies: ['React', 'Node.js', 'MongoDB'],
-            demoLink: '#',
-            codeLink: '#'
+            demoLink: 'https://Beicholo.com',
+            codeLink: 'https://github.com/jamil-stark/shopping-cart.git'
         },
         {
             id: 2,
-            title: 'Task Management App',
-            description: 'A collaborative task management application that helps teams organize and track project progress efficiently.',
-            image: 'https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1171&q=80',
-            technologies: ['Vue.js', 'Express', 'PostgreSQL'],
-            demoLink: '#',
+            title: 'The Newz zone',
+            description: 'A sleek news platform built with WordPress, offering the latest updates on various topics with an easy-to-navigate interface.',
+            image: newzzone,
+            technologies: ['Wordpress'],
+            demoLink: 'https://Thenewzzone.com',
             codeLink: '#'
         },
         {
             id: 3,
-            title: 'Weather Dashboard',
-            description: 'An interactive weather application that provides real-time forecasts, historical data, and visual weather representations.',
-            image: 'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80',
-            technologies: ['React', 'Redux', 'Weather API'],
-            demoLink: '#',
-            codeLink: '#'
+            title: 'Achel Hot Yoga',
+            description: 'A dynamic yoga platform offering real-time schedules, class details, and interactive features for a seamless experience.',
+            image: yoga,
+            technologies: ['React', 'Django','Bootstrap'],
+            demoLink: 'https://achel-hot-yoga-production.up.railway.app/',
+            codeLink: 'https://github.com/theBwoyProgrammer/achel-hot-yoga.git'
         }
     ];
 
