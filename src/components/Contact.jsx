@@ -121,7 +121,12 @@ const Contact = () => {
                                         icon: 'bi-github',
                                         title: 'GitHub',
                                         content: <a href="https://github.com/prodib01" className="text-white-50" target="_blank" rel="noopener noreferrer"> prodib01</a>
-                                            }
+                                    },
+                                    {
+                                        icon: 'bi-linkedin',
+                                        title: 'LinkedIn',
+                                        content: <a href="https://www.linkedin.com/in/kisakye-brendah-prosper-802160277/" className="text-white-50" target="_blank" rel="noopener noreferrer">Kisakye Brendah Prosper</a>
+                                    }
                                 ].map((item, index) => (
                                     <motion.div
                                         key={item.title}
