@@ -27,8 +27,9 @@ const Hero = () => {
                                 Hello, I'm <span className="text-primary">Brendah Prosper Kisakye</span>
                             </h1>
                             <p className="lead mb-5 text-white">
-                                A passionate Software Developer specializing in modern web applications
+                                A passionate Software Developer specializing in web, mobile, and desktop applications, with expertise in a range of modern technologies.
                             </p>
+
 
                             <div className="d-flex justify-content-center gap-3">
                                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
