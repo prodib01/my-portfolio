@@ -99,7 +99,7 @@ const Contact = () => {
                                     {
                                         icon: 'bi-geo-alt',
                                         title: 'Location',
-                                        content: <a href="https://www.google.com/maps?q=0.37304884628384066,32.6084268400048" target="_blank" className="text-white-50">
+                                        content: <a href="https://www.google.com/maps?q=0.37304884628384066,32.6084268400048" target="_blank" rel="noopener noreferrer" className="text-white-50">
                                             Kulambiro, Uganda</a>
                                     },
                                     {
