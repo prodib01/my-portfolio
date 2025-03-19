@@ -60,7 +60,6 @@ const Contact = () => {
         setValidated(true);
     };
 
-
     return (
         <section id="contact" className="section-padding" style={{ backgroundColor: '#212529' }}>
             <Container>
@@ -91,15 +90,38 @@ const Contact = () => {
                         >
                             <h4 className="text-white mb-4">Let's discuss your project</h4>
                             <p className="text-white-50 mb-5">
-                                I'm interested in freelance opportunities – especially ambitious or large projects.
+                                I'm interested in freelance, consultancy and full-time opportunities – especially ambitious or large projects.
                                 However, if you have other requests or questions, feel free to reach out using the form.
                             </p>
 
                             <div className="contact-info">
                                 {[
-                                    { icon: 'bi-geo-alt', title: 'Location', content: 'Kampala, Uganda' },
-                                    { icon: 'bi-envelope', title: 'Email', content: 'kskbrendah@gmail.com' },
-                                    { icon: 'bi-github', title: 'GitHub', content: 'github.com/prodib01' }
+                                    {
+                                        icon: 'bi-geo-alt',
+                                        title: 'Location',
+                                        content: <a href="https://www.google.com/maps?q=0.37304884628384066,32.6084268400048" target="_blank" className="text-white-50">
+                                            Kulambiro, Uganda</a>
+                                    },
+                                    {
+                                        icon: 'bi-envelope',
+                                        title: 'Email',
+                                        content: <a href="mailto:kskbrendah@gmail.com" className="text-white-50">kskbrendah@gmail.com</a>
+                                    },
+                                    {
+                                        icon: 'bi-whatsapp',
+                                        title: 'WhatsApp',
+                                        content: <a href="https://wa.me/256753049694" className="text-white-50">+256 753 049 694</a>
+                                    },
+                                    {
+                                        icon: 'bi-phone',
+                                        title: 'Phone',
+                                        content: <a href="tel:+256785685364" className="text-white-50">+256 785 685 364</a>
+                                    },
+                                    {
+                                        icon: 'bi-github',
+                                        title: 'GitHub',
+                                        content: <a href="https://github.com/prodib01" className="text-white-50" target="_blank" rel="noopener noreferrer"> prodib01</a>
+                                            }
                                 ].map((item, index) => (
                                     <motion.div
                                         key={item.title}

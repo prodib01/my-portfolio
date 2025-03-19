@@ -1,18 +1,37 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Navbar, Container, Nav } from 'react-bootstrap';
 
 const NavigationBar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [expanded, setExpanded] = useState(false); // State to track navbar expansion
+    const navbarRef = useRef(null); // Reference for the navbar
 
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.scrollY > 50);
+            // Close the navbar when the user scrolls down
+            setScrolled(window.scrollY > 50); // Optional: Modify this based on your preference
+
+            // Close the navbar if it's expanded when the user scrolls
+            if (expanded) {
+                setExpanded(false);
+            }
+        };
+
+        const handleClickOutside = (event) => {
+            // Close navbar if the click is outside the navbar
+            if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+                setExpanded(false); // Close the navbar
+            }
         };
 
         window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+        document.addEventListener('click', handleClickOutside); // Add click listener for outside clicks
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            document.removeEventListener('click', handleClickOutside); // Clean up the event listener
+        };
+    }, [expanded]); // `expanded` state dependency to track navbar state
 
     const handleNavClick = () => {
         setExpanded(false); // Close the navbar when a link is clicked
@@ -20,6 +39,7 @@ const NavigationBar = () => {
 
     return (
         <Navbar
+            ref={navbarRef} // Attach ref to the navbar
             expand="lg"
             variant="dark"
             fixed="top"

@@ -18,39 +18,46 @@ const Skills = () => {
             title: 'Frontend',
             icon: 'bi-laptop',
             skills: [
-                { name: 'JavaScript/TypeScript', level: 90 },
+                { name: 'JavaScript', level: 90 },
                 { name: 'React', level: 85 },
                 { name: 'HTML5/CSS3', level: 95 },
+                { name: 'Bootstrap', level: 90 },
+                { name: 'Figma', level: 80 },
             ]
         },
         {
             title: 'Backend',
             icon: 'bi-server',
             skills: [
-                { name: 'Node.js', level: 85 },
-                { name: 'Express', level: 90 },
-                { name: 'Postgres', level: 80 },
-                { name: 'SQL', level: 75 }
+                { name: 'PHP (Laravel, Yii2)', level: 85 },
+                { name: 'Python (Django)', level: 90 },
+                { name: 'Node.js', level: 75 },
+                { name: 'MongoDB', level: 80 },
+                { name: 'MySQL', level: 85 },
+                { name: 'Redis', level: 70 },
+                { name: 'C# (.NET)', level: 80 },
             ]
         },
         {
             title: 'Tools & Methods',
             icon: 'bi-tools',
             skills: [
-                { name: 'Git & GitHub', level: 95 },
-                { name: 'Docker', level: 75 },
-                { name: 'Agile Development', level: 85 },
-                { name: 'Testing (Jest, Mocha)', level: 80 }
+                { name: 'Git', level: 95 },
+                { name: 'Docker', level: 80 },
+                { name: 'Chart.js', level: 70 },
+                { name: 'Postman', level: 85 },
+                { name: 'Jupyter', level: 75 },
+                { name: 'Nginx', level: 70 },
             ]
         },
         {
-            title: 'Additional Skills',
+            title: 'Mobile & Additional Skills',
             icon: 'bi-plus-circle',
             skills: [
-                { name: 'Responsive Design', level: 90 },
+                { name: 'Flutter', level: 70 },
                 { name: 'API Development', level: 85 },
                 { name: 'UI/UX Principles', level: 80 },
-                { name: 'Performance Optimization', level: 85 }
+                { name: 'Performance Optimization', level: 75 }
             ]
         }
     ];

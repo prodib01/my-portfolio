@@ -12,9 +12,8 @@ const Projects = () => {
             title: 'Beicholo',
             description: 'A full-stack e-commerce solution with product management, shopping cart, and payment processing capabilities.',
             image: beicholo,
-            technologies: ['React', 'Node.js', 'MongoDB'],
+            technologies: ['React', 'Django', 'PostgreSQL'],
             demoLink: 'https://Beicholo.com',
-            codeLink: 'https://github.com/jamil-stark/shopping-cart.git'
         },
         {
             id: 2,
@@ -23,7 +22,6 @@ const Projects = () => {
             image: newzzone,
             technologies: ['Wordpress'],
             demoLink: 'https://Thenewzzone.com',
-            codeLink: '#'
         },
         {
             id: 3,
@@ -32,7 +30,6 @@ const Projects = () => {
             image: yoga,
             technologies: ['React', 'Django','Bootstrap'],
             demoLink: 'https://achel-hot-yoga-production.up.railway.app/',
-            codeLink: 'https://github.com/theBwoyProgrammer/achel-hot-yoga.git'
         }
     ];
 
@@ -102,13 +99,6 @@ const Projects = () => {
                                                 className="px-3 rounded-pill"
                                             >
                                                 <i className="bi bi-display me-2"></i>Demo
-                                            </Button>
-                                            <Button
-                                                href={project.codeLink}
-                                                variant="outline-dark"
-                                                className="px-3 rounded-pill"
-                                            >
-                                                <i className="bi bi-github me-2"></i>Code
                                             </Button>
                                         </div>
                                     </Card.Body>
