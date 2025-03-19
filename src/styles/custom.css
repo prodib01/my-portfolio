@@ -138,6 +138,94 @@ body {
     font-size: 16px;
 }
 
+/* Compact Skills Section Styling */
+.skills-section {
+    background-color: #fafbff;
+    position: relative;
+    overflow: hidden;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+}
+
+.skills-section::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.06), rgba(13, 202, 240, 0.06));
+    top: -80px;
+    left: -80px;
+    z-index: 0;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+/* Hide scrollbar but allow scrolling */
+.skill-tabs::-webkit-scrollbar {
+    display: none;
+}
+
+/* Progress Bar Animation */
+@keyframes animate-positive {
+    0% { width: 0; }
+}
+
+/* Optimizing spacing */
+.section-padding {
+    padding: 70px 0;
+}
+
+/* Badge styling */
+.badge {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Tabs hover effect */
+.nav-pills .nav-link {
+    transition: all 0.3s ease;
+}
+
+.nav-pills .nav-link:hover:not(.active) {
+    background-color: rgba(13, 110, 253, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Stats cards */
+.skill-stats .card {
+    transition: all 0.3s ease;
+}
+
+.skill-stats .card:hover {
+    transform: translateY(-5px);
+}
+
+.skill-stats .fw-bold {
+    font-size: 1.5rem;
+}
+
+/* Make skills section more responsive */
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 50px 0;
+    }
+
+    .skill-stats .card {
+        padding: 10px;
+    }
+
+    .skill-stats .fw-bold {
+        font-size: 1.2rem;
+    }
+}
+
 /* Mobile Responsive Adjustments */
 @media (max-width: 768px) {
     .section-padding {
