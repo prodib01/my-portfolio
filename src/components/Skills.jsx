@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Container, Row, Col, Card, ProgressBar } from 'react-bootstrap';
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
